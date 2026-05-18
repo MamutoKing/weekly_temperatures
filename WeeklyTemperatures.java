@@ -23,7 +23,7 @@ public class WeeklyTemperatures {
             }
             for (i = 0; i < tempAVG.length; ++i){
                 weekAVG = weekAVG + tempAVG[i];
-                System.out.println("This weeks average Temp: " + (weekAvg / 7));
+                System.out.println("This weeks average Temp: " + (weekAvg / 7) + "°F");
             }
         }
         else { 
