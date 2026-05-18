@@ -8,6 +8,7 @@ public class WeeklyTemperatures {
         //Declare Arrays and index
         String weekDay[] = {"Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         int tempAVG[] = {79, 81, 77, 83, 85, 83, 86};
+        int weekAVG = 0
         String input;
         int i;
 
@@ -20,10 +21,16 @@ public class WeeklyTemperatures {
             for (i = 0; i < weekDay.length; ++i) {
                 System.out.println(weekDay[i] + ": " + tempAVG[i] + "°F");
             }
+            for (i = 0; i < tempAVG.length; ++i){
+                weekAVG = weekAVG + tempAVG[i];
+                System.out.println("This weeks average Temp: " + (weekAvg / 7));
+            }
         }
         else { 
             System.out.println("Invalid input.");
         }
+
+        
 
         scnr.close();
     }
