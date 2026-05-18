@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class weekly_tempuratures { 
+public class WeeklyTemperatures { 
     public static void main(String[] args) {
 
         Scanner scnr = new Scanner(System.in);
@@ -15,6 +15,7 @@ public class weekly_tempuratures {
         System.out.println("Enter \"week\" to see average teperatures for each day this week.");
         input = scnr.nextLine();
 
+        //initiate scnr input and loop execution
         if (input.equalsIgnoreCase("week")) {
             for (i = 0; i < weekDay.length; ++i) {
                 System.out.println(weekDay[i] + ": " + tempAVG[i] + "°F");
@@ -23,7 +24,8 @@ public class weekly_tempuratures {
         else { 
             System.out.println("Invalid input.");
         }
-        Scanner.close();
+
+        scnr.close();
     }
 
 }
